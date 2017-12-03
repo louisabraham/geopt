@@ -2,9 +2,10 @@
 
 aka **Ge**neric **Opt**imization by **G**enetically **E**volved **Op**eration **T**rees
 
-This library allows feature engineering by genetically evolved operation trees.
+This library allows feature engineering by genetically evolved operation trees
+(in fact they are [DAGs](https://en.wikipedia.org/wiki/Directed_acyclic_graph), but `geopd` sounded ugly).
 
-The trees look like this:
+The trees look like this (output in red):
 
 <img src="https://raw.githubusercontent.com/louisabraham/geopt/master/random_tree.png"
 alt="random tree" width="70%"/>
