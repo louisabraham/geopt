@@ -50,3 +50,8 @@ This is just a proof of concept, the pull requests are very welcome.
 Look at the `examples/` folder.
 
 Also, the code is really not big (~ 600 SLOC), quite readable and well commented.
+
+
+## More ideas
+
+- Add numeric parameter nodes, compute the derivatives using SymPy and do gradient descent
