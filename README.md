@@ -24,7 +24,7 @@ The `Evolution.evolve` can also take a `pool` argument and be parallelized.
 ## Performances
 
 The [`binary_classification.ipynb`](https://github.com/louisabraham/geopt/blob/master/examples/binary_classification.ipynb) notebook shows how a simple threshold model
-trained on **20%** of the data yields **0.956%** accuracy on the
+trained on **20%** of the data yields **95.6%** accuracy on the
 [Breast Cancer Wisconsin (Diagnostic) Data Set](https://www.kaggle.com/uciml/breast-cancer-wisconsin-data)
 
 
