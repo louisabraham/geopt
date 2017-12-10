@@ -54,4 +54,16 @@ Also, the code is really not big (~ 600 SLOC), quite readable and well commented
 
 ## More ideas
 
+### About the model
 - Add numeric parameter nodes, compute the derivatives using SymPy and do gradient descent
+
+### About the optimization
+- Since many OpTrees are similar in the population and over the generations,
+one could memoize their fitness on the current dataset. A simple way to do it would be to make a dictionnary
+`{formula: fitness}`.
+- One could think this one step further with a node grained memoization `{node: evaluation}`,
+with the drawback that it could only work with the 'raw' numpy backend (`backend=None`). However, the memory
+footprint would be horrible, and numexpr offers great performances so I don't think it would be a good idea.
+- Clustering would be possible since the OpTrees are picklable, with an interface like this
+[root client](https://github.com/louisabraham/MarsRover/blob/master/remote_executor.py) and those
+[node servers](https://github.com/louisabraham/MarsRover/blob/master/rest.py).
